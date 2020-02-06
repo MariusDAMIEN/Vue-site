@@ -9,7 +9,7 @@
             <b-row>
                 <b-col class="title"><h3>{{ pres }}</h3></b-col>
             </b-row>
-            <b-row cols="1" cols-xs="1" cols-sm="3" cols-md="3" cols-lg="3">
+            <b-row cols-xs="3" cols-sm="3" cols-md="3" cols-lg="3">
                 <b-col class="button"><el-button class="button-size"  plain >C.V.</el-button></b-col>
                 <b-col class="button"><el-button class="button-size"  plain >Mes Projets</el-button></b-col>
                 <b-col class="button"><el-button class="button-size"  plain >Cours</el-button></b-col>
@@ -70,11 +70,11 @@ h3 {
     /* font-size: 40px; */
     font-size: calc(1vw + 1vh + 2vmin);
     text-align: center;
-    padding-top: 50px;
+    padding-top: 10vh;
 }
 
 .button {
-    padding-top: 10%;
+    padding-top: 25vh;
     text-align: center;
 }
 .el-button {
