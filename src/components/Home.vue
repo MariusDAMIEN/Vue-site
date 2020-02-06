@@ -74,7 +74,7 @@ h3 {
 }
 
 .button {
-    padding-top: 25vh;
+    padding-top: 20vh;
     text-align: center;
 }
 .el-button {
