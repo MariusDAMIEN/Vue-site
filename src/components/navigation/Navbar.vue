@@ -1,22 +1,25 @@
 <template>
     <div id="navbar">
-        <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-        <el-menu-item index="1">Processing Center</el-menu-item>
-        <el-submenu index="2">
-        <template slot="title">Workspace</template>
-        <el-menu-item index="2-1">item one</el-menu-item>
-        <el-menu-item index="2-2">item two</el-menu-item>
-        <el-menu-item index="2-3">item three</el-menu-item>
-        <el-submenu index="2-4">
-            <template slot="title">item four</template>
-            <el-menu-item index="2-4-1">item one</el-menu-item>
-            <el-menu-item index="2-4-2">item two</el-menu-item>
-            <el-menu-item index="2-4-3">item three</el-menu-item>
-        </el-submenu>
-        </el-submenu>
-        <el-menu-item index="3" disabled>Info</el-menu-item>
-        <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">Orders</a></el-menu-item>
-        </el-menu>
+      <div>
+  <b-navbar class="barre">
+    <b-navbar-nav>
+      <b-nav-item class="item" href="#">Home</b-nav-item>
+
+      <!-- Navbar dropdowns -->
+      <b-nav-item-dropdown class="item" text="Lang" right>
+        <b-dropdown-item href="#">EN</b-dropdown-item>
+        <b-dropdown-item href="#">ES</b-dropdown-item>
+        <b-dropdown-item href="#">RU</b-dropdown-item>
+        <b-dropdown-item href="#">FA</b-dropdown-item>
+      </b-nav-item-dropdown>
+
+      <b-nav-item-dropdown class="item" text="User" right>
+        <b-dropdown-item href="#">Account</b-dropdown-item>
+        <b-dropdown-item href="#">Settings</b-dropdown-item>
+      </b-nav-item-dropdown>
+    </b-navbar-nav>
+  </b-navbar>
+</div>
     </div>
 </template>
 
@@ -36,3 +39,23 @@ export default {
     }
 }
 </script>
+
+<style>
+
+.item {
+  font-size: 40px;
+  font-family: "Lobster";
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+.barre {
+  justify-content: center;
+  color: white !important;
+  width: 100%;
+  background-color: rgba(76, 92, 104, 0.5);
+}
+
+</style>

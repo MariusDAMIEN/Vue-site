@@ -8,4 +8,5 @@ $--color-primary: teal;
 /* icon font path, required */
 $--font-path: '~element-ui/lib/theme-chalk/fonts';
 
+$enable-responsive-font-sizes: true;
 @import "~element-ui/packages/theme-chalk/src/index";

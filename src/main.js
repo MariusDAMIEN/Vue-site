@@ -6,6 +6,9 @@ import App from './App.vue'
 import * as route from './routes'
 import './plugins/element.js'
 
+// CSS import
+
+
 
 Vue.config.productionTip = false
 // Import de la constante pour les routes
