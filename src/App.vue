@@ -1,20 +1,20 @@
 <template>
-  <div id="app" :style="{ backgroundImage: `url('${image}')` }">
-    <Home /> 
+  <div id="app">
+    <!-- <Home />  -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Home from './components/Home.vue'
+// import Home from './components/Home.vue'
 
 export default {
   name: 'app',
   components: {
-    Home
+    // Home
   },
   data() {
     return {
-      image: require("@/assets/images/background.jpg")  
     }
   },
 }
@@ -22,11 +22,9 @@ export default {
 
 <style>
 #app {
+  background-color: #f5f5f5;
   width: 100%;
   height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 html {
