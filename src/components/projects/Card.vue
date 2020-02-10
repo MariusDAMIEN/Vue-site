@@ -22,3 +22,9 @@ export default {
     props: ['card']
 }
 </script>
+
+<style>
+.card-body {
+    background-color:#fafafa;
+}
+</style>

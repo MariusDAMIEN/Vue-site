@@ -4,6 +4,9 @@
         <h1>|</h1>
         <b-container class="buttons">
         <b-row cols-xs="12">
+            <div class="col">
+                <el-button v-on:click="all()" class="button" >Tout</el-button>
+            </div>
             <div :key="index" v-for="(language, index) in languages" class="col">
                 <el-button v-on:click="filter(language)" class="button" >{{ language }}</el-button>            </div>
         </b-row>
@@ -27,13 +30,17 @@ export default {
         return {
             languages: [
                 "C",
-                "Flutter"
+                "Flutter",
+                "Vue.js"
             ]
         }
     },
     methods: {
         filter: function(index) {
             this.$refs.cards.filter(index)
+        },
+        all: function() {
+            this.$refs.cards.all()
         }
     }
 }

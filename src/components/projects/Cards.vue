@@ -35,6 +35,10 @@ export default {
             this.cards = this.$store.getters.projetsfilter(lang)
             this.reDraw()
         },
+        all: function() {
+            this.cards = this.$store.getters.projets
+            this.reDraw()
+        },
     }
 }
 </script>
