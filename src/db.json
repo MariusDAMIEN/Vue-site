@@ -14,29 +14,5 @@
          "lang": "Vue.js",
          "description": "Le site sur lequel vous êtes",
          "link": "https://github.com/MariusDAMIEN/Vue-site"
-    },
-    {
-         "id": 1, 
-         "imgsrc": "https://picsum.photos/600/300/?image=25",
-         "title": "Card Title AAAAAAAAAAAAAA",
-         "lang": "Flutter"
-    },
-    {
-         "id": 1, 
-         "imgsrc": "https://picsum.photos/600/300/?image=25",
-         "title": "Card Title AAAAAAAAAAAAAA",
-         "lang": "C"
-    },
-    {
-         "id": 1, 
-         "imgsrc": "https://picsum.photos/600/300/?image=25",
-         "title": "Card Title AAAAAAAAAAAAAA",
-         "lang": "C"
-    },
-    {
-         "id": 2, 
-         "imgsrc": "https://picsum.photos/600/300/?image=25",
-         "title": "Deuxième projet",
-         "lang": "D"
     }
 ]

@@ -1,7 +1,7 @@
 <template>
       <div id="Cards">
         <!-- <h1>Page Des Projets</h1> -->
-        <div v-masonry transition-duration="3s" item-selector=".item" class="masonry-container">
+        <div  horizontal-order="true"   v-masonry transition-duration="3s" item-selector=".item" class="masonry-container">
         <div v-masonry-tile class="item" v-bind:key="index" v-for="(card, index) in cards">
             <Card v-bind:card="card"/>
             <!-- <Card v-bind:title="card.title"> -->
