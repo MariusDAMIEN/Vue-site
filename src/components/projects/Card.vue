@@ -1,8 +1,8 @@
 <template>
     <div>
         <b-card
-            v-bind:title="title"
-            v-bind:img-src="imgsrc"
+            v-bind:title="card.title"
+            v-bind:img-src="card.imgsrc"
             img-alt="Image"
             img-top
             tag="article"
@@ -10,19 +10,15 @@
             class="lg-12"
         >
         <b-card-text>
-            Some quick example text to build on the card title and make up the bulk of the card's content.
+            {{ card.description }}
         </b-card-text>
-        <b-button href="#" variant="primary">Go somewhere</b-button>
+        <b-button target="_blank" rel="noopener noreferrer" v-bind:href=card.link variant="primary">Github</b-button>
         </b-card>
     </div>
 </template>
 
 <script>
 export default {
-    props: {
-        title: String,
-        imgsrc: String,
-        // card: {title: }
-    }
+    props: ['card']
 }
 </script>

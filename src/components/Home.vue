@@ -10,10 +10,13 @@
                 <b-col class="title"><h3>{{ pres }}</h3></b-col>
             </b-row>
             <b-row cols-xs="3" cols-sm="3" cols-md="3" cols-lg="3">
-                <b-col class="button"><router-link to="/projets">
+                <b-col class="button">
                 <el-button class="button-size"  plain >C.V.</el-button>
-                </router-link></b-col>
-                <b-col class="button"><el-button class="button-size"  plain >Mes Projets</el-button></b-col>
+                </b-col>
+                <b-col class="button"><router-link to="/projets">
+                    <el-button class="button-size"  plain >Mes Projets</el-button>
+                </router-link>
+                </b-col>
                 <b-col class="button"><el-button class="button-size"  plain >Cours</el-button></b-col>
             </b-row>
         </b-container>
@@ -82,7 +85,7 @@ body {
 }
 
 #Home .button {
-    padding-top: 20vh;
+    padding-top: 15vh;
     text-align: center;
 }
 
